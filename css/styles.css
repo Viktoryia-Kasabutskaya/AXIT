@@ -1,0 +1,148 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.awesome {
+    padding: 15px 0;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 400;
+}
+
+.title__line {
+    margin-top: 50px;
+    width: 170px;
+    height: 1px;
+    background-color: #EC7979;
+    margin: 62px auto 40px auto;
+}
+
+.title__text {
+    font-weight: 400;
+    font-size: 18px;
+    color: #86878B;
+}
+
+.awesome__items {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 80px auto 10px auto;
+}
+
+.awesome__block {
+    text-align: center;
+}
+
+.awesome__block__subtitle {
+    margin: 40px 0 40px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+}
+    
+.pricing {
+    background-color: #F5F5F5;
+    padding: 55px 0 20px 0;
+}
+
+.pricing__wrapper, .reviews__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0 20px 0;
+    gap: 30px;
+}
+
+.pricing__price {
+    text-align: center;
+    background: #333333;
+    color: #FFFFFF;
+    gap: 30px;
+    width: 100%;
+}
+
+.pricing__price_top {
+    margin: -15px 0 15px 0;
+}
+
+.pricing__price__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    border: 2px solid #F5F5F5;
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px 0;
+}
+
+.pricing__price__cost {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    border: 2px solid #F5F5F5;
+    padding: 30px 0;
+}
+
+.pricing__price__text {
+    color: rgba(255, 255, 255, 0.5);
+    border: 2px solid #F5F5F5;
+    padding: 15px 0 14px 0;
+}
+
+li {
+    background: #FFFFFF;
+    border: 2px solid #F5F5F5;
+    color: #86878B;
+    padding: 15px 0 14px 0;
+}
+
+.reviews {
+    padding: 55px 0 0 0;
+}
+
+.reviews__items__text {
+    color: #86878B;
+    background: #E2E2E2;
+    border-radius: 10px;
+    text-align: center;
+    padding: 38px 15px 37px;
+}
+
+.reviews__items__img {
+    margin-left: 70px;
+}
+
+.reviews__items__author {
+    display: flex;
+    margin: 50px 0;
+    gap: 0 30px;
+    flex-wrap: wrap;
+}
+
+.reviews__items__author p {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 0;
+}
+
+.reviews__items__author div {
+    padding-left: 100px;
+}
