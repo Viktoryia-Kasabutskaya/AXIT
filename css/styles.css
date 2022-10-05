@@ -7,7 +7,7 @@ body {
 }
 
 .awesome {
-    padding: 15px 0;
+    padding: 100px 0 30px 0;
 }
 
 .container {
@@ -39,11 +39,11 @@ h2 {
     color: #86878B;
 }
 
-.awesome__items {
+.awesome__wrapper, .pricing__wrapper, .reviews__wrapper {
     display: flex;
     justify-content: space-between;
     gap: 30px;
-    margin: 80px auto 10px auto;
+    margin: 80px auto 20px auto;
 }
 
 .awesome__block {
@@ -60,26 +60,22 @@ h2 {
     
 .pricing {
     background-color: #F5F5F5;
-    padding: 55px 0 20px 0;
-}
-
-.pricing__wrapper, .reviews__wrapper {
-    display: flex;
-    justify-content: space-between;
-    padding: 80px 0 20px 0;
-    gap: 30px;
+    padding: 100px 0 30px 0;
 }
 
 .pricing__price {
     text-align: center;
-    background: #333333;
     color: #FFFFFF;
     gap: 30px;
     width: 100%;
 }
 
+.pricing__price p {
+    background: #333333;
+}
+
 .pricing__price_top {
-    margin: -15px 0 15px 0;
+    margin-top: -15px;
 }
 
 .pricing__price__title {
@@ -113,7 +109,11 @@ li {
 }
 
 .reviews {
-    padding: 55px 0 0 0;
+    padding: 100px 0 0 0;
+}
+
+.reviews__items {
+    position: relative;
 }
 
 .reviews__items__text {
@@ -121,21 +121,27 @@ li {
     background: #E2E2E2;
     border-radius: 10px;
     text-align: center;
-    padding: 38px 15px 37px;
+    padding: 38px 15px 37px;   
 }
 
-.reviews__items__img {
-    margin-left: 70px;
-}
+.reviews__items__arrow {
+    width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 20px solid #E2E2E2;
+    position: absolute;
+    left: 70px;
+} 
 
 .reviews__items__author {
     display: flex;
-    margin: 50px 0;
+    margin: 70px 0 30px 0;
     gap: 0 30px;
     flex-wrap: wrap;
 }
 
-.reviews__items__author p {
+.reviews__items__author p:nth-child(2) {
     font-weight: 700;
     font-size: 24px;
     line-height: 33px;
@@ -143,6 +149,7 @@ li {
     padding: 10px 0;
 }
 
-.reviews__items__author div {
-    padding-left: 100px;
+.reviews__items__author p:nth-child(3) {
+    font-size: 18px;
+    margin: 20px 0 0 100px;
 }
