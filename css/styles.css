@@ -112,27 +112,27 @@ li {
     padding: 100px 0 0 0;
 }
 
-.reviews__items {
-    position: relative;
-}
-
 .reviews__items__text {
     color: #86878B;
     background: #E2E2E2;
     border-radius: 10px;
     text-align: center;
-    padding: 38px 15px 37px;   
+    padding: 38px 15px 37px;
+    position: relative;   
 }
 
-.reviews__items__arrow {
+.reviews__items__text:after {
+    content: '';
     width: 0;
 	height: 0;
 	border-left: 15px solid transparent;
 	border-right: 15px solid transparent;
 	border-top: 20px solid #E2E2E2;
+    display: block;
     position: absolute;
     left: 70px;
-} 
+    bottom: -20px;
+}
 
 .reviews__items__author {
     display: flex;
