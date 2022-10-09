@@ -12,7 +12,6 @@ body {
 }
 
 .header {
-    padding: 22.46px 0 21.85px 0;
     background: #000000;
 }
 
@@ -34,17 +33,28 @@ body {
 }
 
 .header__menu a {
-    display: block;
+    padding: 1px 0;
     width: 113.8px;
+    height: 75px;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
     line-height: 19px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-transform: capitalize;
     color: #FFFFFF;
     align-items: center;
+}
+
+.header__menu a:hover {
+    background: #EC7979;
+}
+
+.header__menu a:active {
+    background: #AB4949;
 }
 
 .main {
@@ -94,12 +104,33 @@ h1 {
     height: 54px;
 }
 
+.main__btn:hover {
+    width: 270px;
+    height: 54px;
+    border: 2px solid #EC7979;
+}
+
+.main__btn:active {
+    background: #AB4949;
+    width: 270px;
+    height: 54px;
+    border: 2px solid #AB4949;
+}
+
 .main__btn a{
     font-family: 'Open Sans';
     font-weight: 600;
     line-height: 25px;
     color: #FFFFFF;
     text-decoration: none;
+}
+
+.main__btn a:hover {
+    color: #EC7979;
+}
+
+.main__btn a:active {
+    color: #FFFFFF;
 }
 
 .form {
