@@ -6,13 +6,165 @@ body {
     line-height: 21px;
 }
 
-.awesome {
-    padding: 100px 0 30px 0;
-}
-
 .container {
     width: 1170px;
     margin: 0 auto;
+}
+
+.header {
+    padding: 22.46px 0 21.85px 0;
+    background: #000000;
+}
+
+.header__container {
+    padding: 0 170px 0 115px;
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    width: 183px;
+}
+
+.header__menu {
+    display: flex;
+    margin-left: 472px;
+    width: 570px;
+}
+
+.header__menu a {
+    display: block;
+    width: 113.8px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    align-items: center;
+}
+
+.main {
+    background: rgba(0, 0, 0, 0.5) url(../img/main-bg.png) no-repeat center top / cover;
+    color: #FFFFFF;
+}
+
+.main .container {
+    display: flex;
+}
+
+.main__wrapper {
+    display: flex;
+    column-gap: 30px;
+}
+
+.main__content {
+    padding: 231px 0 185px 0;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    width: 670px;
+    text-transform: uppercase;
+    margin: 73px 0 55px 0;
+}
+
+.main__line {
+    width: 170px;
+    height: 1px;
+    background: #FFFFFF;
+}
+
+.main__text {
+    width: 270px;
+    margin: 42px 0;
+}
+
+.main__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #FFFFFF;
+    width: 270px;
+    height: 54px;
+}
+
+.main__btn a{
+    font-family: 'Open Sans';
+    font-weight: 600;
+    line-height: 25px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.form {
+    width: 470px;
+    height: 450px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin: 208px 0 30px 0;
+    font-family: 'Open Sans';
+}
+
+.form__title {
+    color: #333333;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: uppercase;
+    align-items: center;
+    text-align: center;
+    padding: 30px 0 75px;
+}
+
+.form__title span {
+    color: #EC7979;
+}
+
+.media {
+    background: #F8EFEF;
+}
+
+.media .container {
+    display: flex;
+}
+
+.media__content {
+    width: 470px;
+}
+
+.media__content div {
+    display: flex;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #333333;
+    text-transform: capitalize;
+    height: 60px;
+    padding: 2px 0 18px 0;
+    align-items: center;
+}
+
+.media__content p {
+    color: #86878B;
+    margin-bottom: 18px;
+}
+
+.media__icons {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 47px;
+    margin-left: 50px;
+    align-items: center;
+}
+
+.awesome {
+    padding: 110px 0 58px 0;
 }
 
 .title {
@@ -26,7 +178,6 @@ h2 {
 }
 
 .title__line {
-    margin-top: 50px;
     width: 170px;
     height: 1px;
     background-color: #EC7979;
@@ -43,7 +194,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     gap: 30px;
-    margin: 80px auto 20px auto;
+    margin: 80px auto 0 auto;
 }
 
 .awesome__block {
@@ -51,7 +202,7 @@ h2 {
 }
 
 .awesome__block__subtitle {
-    margin: 40px 0 40px 0;
+    margin: 50px 0 40px 0;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 24px;
@@ -60,7 +211,7 @@ h2 {
     
 .pricing {
     background-color: #F5F5F5;
-    padding: 100px 0 30px 0;
+    padding: 110px 0 50px 0;
 }
 
 .pricing__price {
@@ -76,6 +227,7 @@ h2 {
 
 .pricing__price_top {
     margin-top: -15px;
+    filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
 }
 
 .pricing__price__title {
@@ -109,7 +261,7 @@ li {
 }
 
 .reviews {
-    padding: 100px 0 0 0;
+    padding: 100px 0 64px 0;
 }
 
 .reviews__items__text {
@@ -136,7 +288,7 @@ li {
 
 .reviews__items__author {
     display: flex;
-    margin: 70px 0 30px 0;
+    margin: 70px 0 0 0;
     gap: 0 30px;
     flex-wrap: wrap;
 }
@@ -152,4 +304,57 @@ li {
 .reviews__items__author p:nth-child(3) {
     font-size: 18px;
     margin: 20px 0 0 100px;
+}
+
+.banner {
+    background: url(../img/banner2.png) no-repeat center top / cover;
+    padding: 110px 0 50px;
+}
+
+.banner .title h2 {
+    color: #FFFFFF;
+}
+
+.title__line_banner {
+    background-color: #FFFFFF;
+}
+
+.title__text_banner {
+    color: #FFFFFF;
+}
+
+.banner__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #FFFFFF;
+    width: 370px;
+    height: 58px;
+    margin: 73px auto 0 auto;
+}
+
+.banner__btn a{
+    font-family: 'Open Sans';
+    font-weight: 600;
+    line-height: 25px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer {
+    background: #000000;
+}
+
+.footer .media__icons {
+    color: #CCCCCC;
+    display: flex;
+    justify-content: center;
+    padding: 39px 0 32px 0;
+    margin: 0 auto;
+}
+
+.footer p {
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding-bottom: 27px;
 }
