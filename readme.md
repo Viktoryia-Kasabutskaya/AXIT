@@ -1,3 +1,3 @@
 # hw-5
 
-section awesome, section pricing, section reviews
+header, section main, section media, section awesome, section pricing, section reviews, footer
