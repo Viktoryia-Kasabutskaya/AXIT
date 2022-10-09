@@ -47,7 +47,7 @@ body {
 }
 
 .main {
-    background: rgba(0, 0, 0, 0.5) url(../img/main-bg.png) no-repeat center top / cover;
+    background: url(../img/main-bg.png) no-repeat center top / cover;
     color: #FFFFFF;
 }
 
