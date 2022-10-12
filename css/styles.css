@@ -170,22 +170,24 @@ h1 {
     padding-bottom: 16px;
     font-size: 14px;
     line-height: 19px;
+}
+
+.form__data input::placeholder {
     color: #BDBDBD;
 }
 
 .form__start {
+    font-family: 'Open Sans';
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
-    /* text-align: center; */
     background: #EC7979;
     border-radius: 0px 0px 10px 10px;
     border: #EC7979;
     width: 470px;
     height: 60px;
     color: #FFFFFF;
-    margin-top: calc(75px - 33px);
-    font-family: 'Open Sans';
+    margin-top: 42px;
 }
 
 .form__start:hover {
@@ -235,7 +237,7 @@ h1 {
 }
 
 .awesome {
-    padding: 110px 0 58px 0;
+    padding: 105px 0 58px 0;
 }
 
 .title {
@@ -270,10 +272,11 @@ h2 {
 
 .awesome__block {
     text-align: center;
+    padding-top: 20px;
 }
 
 .awesome__block__subtitle {
-    margin: 50px 0 40px 0;
+    margin: 70px 0 40px 0;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 24px;
@@ -403,6 +406,69 @@ li {
 .main__btn_banner:hover {
     height: 58px;
     width: 370px;
+}
+
+.contact .container {
+    padding: 105px 0 50px;
+}
+
+.contact__form {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    padding-top: 89px;
+    color: #BDBDBD;
+}
+
+.contact__data {
+    padding-bottom: 50px;
+}
+
+.contact__data input {
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+    width: 570px;
+    padding-bottom: 16px;
+}
+
+.contact__data input::placeholder {
+    color: #BDBDBD;
+}
+
+.contact__form textarea {
+    width: 570px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    border: none;
+    overflow: hidden;
+    border-bottom: 1px solid #BDBDBD;
+    padding-bottom: 169px;
+    resize: none;
+}
+
+.contact__form textarea::placeholder {
+    color: #BDBDBD;
+}
+
+.main__btn_send {
+    margin: auto;
+    background: #EC7979;
+    height: 58px;
+    width: 370px;
+}
+
+.main__btn_send:hover {
+    background: #AB4949;
+    height: 58px;
+    width: 370px;
+}
+
+.main__btn_send:active {
+    background: #EC7979;
+    box-shadow: inset 0px 0px 10px #AB4949;
 }
 
 .footer {
