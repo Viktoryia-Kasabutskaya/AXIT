@@ -96,42 +96,24 @@ h1 {
 }
 
 .main__btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #FFFFFF;
-    width: 270px;
-    height: 54px;
-    background: inherit;
-}
-
-.main__btn:hover {
-    width: 270px;
-    height: 54px;
-    border: 2px solid #EC7979;
-}
-
-.main__btn:active {
-    background: #AB4949;
-    width: 270px;
-    height: 54px;
-    border: 2px solid #AB4949;
-}
-
-.main__btn a{
     font-family: 'Open Sans';
     font-weight: 600;
     line-height: 25px;
     font-size: 18px;
     color: #FFFFFF;
-    text-decoration: none;
+    border: 2px solid #FFFFFF;
+    width: 270px;
+    height: 54px;
 }
 
-.main__btn a:hover {
+.main__btn:hover {
+    border: 2px solid #EC7979;
     color: #EC7979;
 }
 
-.main__btn a:active {
+.main__btn:active {
+    background: #AB4949;
+    border: 2px solid #AB4949;
     color: #FFFFFF;
 }
 
@@ -159,20 +141,17 @@ h1 {
     color: #EC7979;
 }
 
-.form__data {
-    margin: 0 50px 33px;
-}
-
-.form__data input {
+.form input {
     border: none;
     border-bottom: 1px solid #BDBDBD;
     width: 370px;
     padding-bottom: 16px;
     font-size: 14px;
     line-height: 19px;
+    margin: 0 50px 33px;
 }
 
-.form__data input::placeholder {
+.form input::placeholder {
     color: #BDBDBD;
 }
 
@@ -403,11 +382,6 @@ li {
     margin: 73px auto 0 auto;
 }
 
-.main__btn_banner:hover {
-    height: 58px;
-    width: 370px;
-}
-
 .contact .container {
     padding: 105px 0 50px;
 }
@@ -422,18 +396,15 @@ li {
     color: #BDBDBD;
 }
 
-.contact__data {
-    padding-bottom: 50px;
-}
-
-.contact__data input {
+.left input {
     border: none;
     border-bottom: 1px solid #BDBDBD;
     width: 570px;
     padding-bottom: 16px;
+    margin-bottom: 50px;
 }
 
-.contact__data input::placeholder {
+.left input::placeholder {
     color: #BDBDBD;
 }
 
@@ -454,7 +425,8 @@ li {
 }
 
 .main__btn_send {
-    margin: auto;
+    margin: 0 auto;
+    display: block;
     background: #EC7979;
     height: 58px;
     width: 370px;
@@ -462,8 +434,7 @@ li {
 
 .main__btn_send:hover {
     background: #AB4949;
-    height: 58px;
-    width: 370px;
+    color: #FFFFFF;
 }
 
 .main__btn_send:active {
