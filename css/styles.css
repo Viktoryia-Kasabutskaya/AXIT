@@ -259,33 +259,57 @@ h2 {
 
 .tabs .container {
     padding: 90px 0 0;
-    overflow: hidden;
 }
 
-.tabs__items {
+.mytabs {
     display: flex;
+    flex-wrap: wrap;
 }
 
-.tabs__item {
+.mytabs input[type="radio"] {
+    display: none;
+}
+
+.mytabs label {
+    padding: 10px 73px;
+    text-align: center;
     font-family: 'Open Sans';
-    font-weight: 400;
     font-size: 14px;
     line-height: 19px;
-    color: #333333;
-    padding: 10px 82.5px 11px;
-    display: block;
+    cursor:pointer;
 }
 
-.tabs__block {
-    position: relative;
-    display: flex;
-    column-gap: 30px;
+.tabs__body {
+    width: 100%;
+    order: 1;
     border: 1px solid #C6CBCD;
     display: none;
 }
 
-.tabs__block__content {
+.tab__radio:checked+.tab__label+.tabs__body {
+    display: block;
+}
+
+.tab__radio:checked+.tab__label {
+    border: 1px solid #C6CBCD;
+    border-radius: 5px 5px 0 0;
+    border-bottom: none;
+    position: relative;
+}
+
+.tabs__radio:checked+.tabs__label:after{
+    content:'';
+    display: block;
+    border-bottom: 1px solid #FFFFFF;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.tabs__wrapper {
     padding-left: 100px;
+    display: flex;
+    column-gap: 30px;
 }
 
 .tabs__block h3 {
@@ -299,43 +323,6 @@ h2 {
 .tabs__block p {
     width: 570px;
     margin-bottom: 27px;
-}
-
-.tabs__block:target {
-    display: flex;
-}
-
-.tabs__block:nth-child(1):before {
-    content: '';
-    border: 1px solid #C6CBCD;
-    border-radius: 5px 5px 0 0;
-    position: absolute;
-    width: 203.05px;
-    height: 40px;
-    top: -40px;
-    left: 0;
-}
-
-.tabs__block:nth-child(2):before {
-    content: '';
-    border: 1px solid #C6CBCD;
-    border-radius: 5px 5px 0 0;
-    position: absolute;
-    width: 203.05px;
-    height: 40px;
-    top: -40px;
-    left: 203.05px;
-}
-
-.tabs__block:nth-child(3):before {
-    content: '';
-    border: 1px solid #C6CBCD;
-    border-radius: 5px 5px 0 0;
-    position: absolute;
-    width: 203.05px;
-    height: 40px;
-    top: -40px;
-    left: 406.1px;
 }
 
 .awesome {
