@@ -266,10 +266,6 @@ h2 {
     flex-wrap: wrap;
 }
 
-.mytabs input[type="radio"] {
-    display: none;
-}
-
 .mytabs label {
     padding: 10px 73px;
     text-align: center;
@@ -280,36 +276,37 @@ h2 {
 }
 
 .tabs__body {
+    padding-left: 100px;
+    display: flex;
+    column-gap: 30px;
     width: 100%;
     order: 1;
     border: 1px solid #C6CBCD;
+}
+
+.mytabs input[type="radio"], .tabs__body {
     display: none;
 }
 
-.tab__radio:checked+.tab__label+.tabs__body {
-    display: block;
+.mytabs label:has(input:checked)+.tabs__body {
+    display: flex;
 }
 
-.tab__radio:checked+.tab__label {
+.mytabs label:has(input:checked) {
     border: 1px solid #C6CBCD;
     border-radius: 5px 5px 0 0;
     border-bottom: none;
     position: relative;
 }
 
-.tabs__radio:checked+.tabs__label:after{
-    content:'';
+.mytabs label:has(input:checked):after {
+    content: '';
     display: block;
+    width: 184px;
     border-bottom: 1px solid #FFFFFF;
     position: absolute;
-    bottom: 0;
     left: 0;
-}
-
-.tabs__wrapper {
-    padding-left: 100px;
-    display: flex;
-    column-gap: 30px;
+    bottom: -1px;
 }
 
 .tabs__block h3 {
