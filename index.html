@@ -5,10 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AXIT</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="css/reset.css"> -->
     <link rel="stylesheet" href="css/zeroing.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
     <header class="header">
@@ -16,6 +23,19 @@
             <div class="header__logo">
                 <img src="img/AXIT.svg" alt="AXIT">
             </div>
+            <input type="checkbox" id="burger">
+            <label for="burger"></label>
+            <div class="burger-line first"></div>
+            <div class="burger-line second"></div>
+            <div class="burger-line third"></div>
+            <div class="burger-line fourth"></div>
+            <nav class="header__burger">
+                <a href="#features">Features</a>
+                <a href="#about">About</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#contacts">Contact</a>
+            </nav>
             <nav class="header__menu">
                 <a href="#features">Features</a>
                 <a href="#about">About</a>
@@ -75,7 +95,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod <br>bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra <br>justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.<br> <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod <br>bibendum laoreet.</p>
                         <a href="#" class="main-btn main-btn_fill">Download</a>
                     </div>
-                    <div><img src="img/img-tab.png" alt="photo"></div>
+                    <img src="img/img-tab.png" alt="photo">
                 </div>
                 <label>
                     <input type="radio" name="mytabs">
@@ -87,7 +107,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod <br>bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra <br>justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.<br> <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod <br>bibendum laoreet.</p>
                         <a href="#" class="main-btn main-btn_fill">Download</a>
                     </div>
-                    <div><img src="img/img-tab2.png" alt="photo"></div>
+                    <img src="img/img-tab2.png" alt="photo">
                 </div>
                 <label>
                     <input type="radio" name="mytabs">
@@ -99,7 +119,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod <br>bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra <br>justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.<br> <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod <br>bibendum laoreet.</p>
                         <a href="#" class="main-btn main-btn_fill">Download</a>
                     </div>
-                    <div><img src="img/img-tab3.png" alt="photo"></div>
+                    <img src="img/img-tab3.png" alt="photo">
                 </div>
                 
             </div>
@@ -192,27 +212,38 @@
                 <div class="reviews__items">
                     <div class="reviews__items__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</div>
                     <div class="reviews__items__author">
-                        <img src="img/customer1.png" alt="customer1">
-                        <p>Davis Rhiel Madsen</p>
-                        <p>Manager</p>
+                        <div><img src="img/customer1.png" alt="customer1"></div>
+                        <div>
+                            <p>Davis Rhiel Madsen</p>
+                            <p>Manager</p>
+                        </div>
                     </div>
                 </div>
                 <div class="reviews__items">
                     <div class="reviews__items__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</div>
                     <div class="reviews__items__author">
-                        <img src="img/customer2.png" alt="customer2">
-                        <p>Jaydon Rosser</p>
-                        <p>Manager</p>
+                        <div><img src="img/customer2.png" alt="customer2"></div>
+                        <div>
+                            <p>Jaydon Rosser</p>
+                            <p>Manager</p>
+                        </div>
                     </div>
                 </div>
                 <div class="reviews__items">
                     <div class="reviews__items__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex, architecto eaque quo suscipit.</div>
                     <div class="reviews__items__author">
-                        <img src="img/customer3.png" alt="customer3">
-                        <p>Cooper Dorwart</p>
-                        <p>Manager</p>
+                        <div><img src="img/customer3.png" alt="customer3"></div>
+                        <div>
+                            <p>Cooper Dorwart</p>
+                            <p>Manager</p>
+                        </div>
                     </div>
                 </div>
+                <div class="reviews__dots">
+                    <div class="reviews__dot"></div>
+                    <div class="reviews__dot"></div>
+                    <div class="reviews__dot"></div>
+                </div>   
             </div>
         </div>
     </section>

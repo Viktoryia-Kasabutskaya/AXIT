@@ -105,6 +105,10 @@ h2 {
     margin-left: -56px;
 }
 
+#burger, .header__burger {
+    display: none;
+}
+
 .header__menu {
     display: flex;
     margin-left: 472px;
@@ -112,7 +116,7 @@ h2 {
 }
 
 .header__menu a {
-    width: 113.8px;
+    width: 113px;
     height: 75px;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
@@ -137,9 +141,9 @@ h2 {
 
 
 .main {
-    background: url(../img/main-bg.png) no-repeat 0 -72px / cover;
+    background: url(../img/main-bg.png) no-repeat center center / cover;
     color: #FFFFFF;
-    padding: 208px 0 185px 0;
+    padding: 207px 0 185px 0;
 }
 
 .main .container {
@@ -149,7 +153,7 @@ h2 {
 }
 
 .main__content {
-    margin-top: 25px;
+    margin-top: 22px;
 }
 
 .main__content h1 {
@@ -211,49 +215,42 @@ h2 {
     line-height: 20px;
     width: 470px;
     height: 60px;
-    margin-top: 42px;
+    margin-top: 40px;
 }
 
 .media {
     background: #F8EFEF;
+    padding: 13px 0 18px 0;
 }
 
 .media .container {
     display: flex;
-}
-
-.media__content {
-    width: 470px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .media__content div {
-    display: flex;
     font-family: 'Open Sans';
     font-weight: 700;
     font-size: 24px;
     line-height: 33px;
     color: #333333;
-    text-transform: capitalize;
-    height: 60px;
-    padding: 2px 0 18px 0;
-    align-items: center;
 }
 
 .media__content p {
     color: #86878B;
-    margin-bottom: 18px;
+    margin-top: 31px;
+    width: 470px;
 }
 
 .media__icons {
     display: flex;
-    justify-content: space-between;
-    column-gap: 47px;
-    margin-left: 50px;
-    align-items: center;
+    justify-content: flex-end;
+    column-gap: 40px;
 }
 
 .media__icons a:hover {
-    transform: scale(1.15);
+    transform: scale(1.2);
     transition: all .4s ease;
 }
 
@@ -421,23 +418,23 @@ li {
 .reviews__items__author {
     display: flex;
     margin: 70px 0 0 0;
-    gap: 0 30px;
-    flex-wrap: wrap;
 }
 
-.reviews__items__author p:nth-child(2) {
+.reviews__items__author p:nth-child(1) {
     font-weight: 700;
     font-size: 24px;
     line-height: 33px;
     font-family: 'Open Sans', sans-serif;
-    padding: 10px 0;
+    margin: 10px 0 0 30px;
 }
 
-.reviews__items__author p:nth-child(3) {
+.reviews__items__author p:nth-child(2) {
     font-size: 18px;
-    margin: 20px 0 0 100px;
+    margin: 40px 0 0 30px;
 }
-
+.reviews__dots {
+    display: none;
+}
 
 .banner {
     background: url(../img/banner2.png) no-repeat center top / cover;
@@ -513,23 +510,18 @@ li {
 
 .footer {
     background: #000000;
+    padding: 35px 0 27px 0;
 }
 
 .footer .media__icons {
     color: #CCCCCC;
     display: flex;
     justify-content: center;
-    padding: 39px 0 32px 0;
-    margin: 0 auto;
-}
-
-.footer .media__icons a:hover {
-    transform: scale(1.15);
-    transition: all .4s ease;
+    column-gap: 40px;
 }
 
 .footer p {
     color: rgba(255, 255, 255, 0.5);
     text-align: center;
-    padding-bottom: 27px;
+    margin-top: 27px;
 }
