@@ -101,8 +101,7 @@ h2 {
 }
 
 .header__logo {
-    width: 183px;
-    margin-left: -56px;
+    margin-left: -55px;
 }
 
 #burger, .header__burger {
@@ -111,8 +110,7 @@ h2 {
 
 .header__menu {
     display: flex;
-    margin-left: 472px;
-    width: 570px;
+    margin-left: auto;
 }
 
 .header__menu a {
